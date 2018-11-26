@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <script>
+        console.log("Hello World");
+        console.log("I'm awesome");
+
+        // 3. Declare a variable x and initialize it with an integer, using these exact steps:
+        // 3.1 First, declare your variable x (do not initialize it yet).
+        // 3.2 Add a console.log statement that explains that explains in words what you think the value of x is, like in this example:
+
+        let x;
+        console.log('the value of x will be:'+typeof(x));
+
+
+        // 3.3 Add a console.log statement that logs the value of x.
+        // 3.4 Now initialize your variable x with an integer.
+        // 3.5 Next, add a console.log statement that explains what you think the value of x is.
+        // 3.6 Add a console.log statement that logs the value of x. Steps to be taken:
+
+        console.log(x);
+        x = 5 ;
+        console.log(x);
+        console.log('the value of my variable x will be:' + typeof(x));
+        console.log(x);
+
+        // 4. Declare a variable y and assign a string to it.
+        // 4.1 Write a console.log statement in which you explain in words what you think the value of the string is.
+        // 4.2 Now console.log the variable y.
+        // 4.3 Now assign a new string to the variable y.
+        // 4.4 Just like you did before write a console.log statement that explains in words what you think will be logged to the console.
+        // 4.5 Now console.log y again.
+
+
+        let y ="";
+        console.log( 'the value of y will be:'+typeof(y));
+        console.log(y);
+        y ="hell yeah";
+        console.log('the value of y will be:'+ typeof(y));
+        console.log(y);
+
+        // 5. How do you round the number 7.25, to the nearest integer (i.e., whole number)?
+        // 5.1 Declare a variable z and assign the number 7.25 to it.
+        // 5.2 Console.log z.
+        // 5.3 Declare another variable a that has the value of z but rounded to the nearest integer.
+        // 5.4 Console.log a.
+        // 5.5 So now we have z and a find a way to compare the two values and store the highest of the two in a new variable.
+        // 5.6 Console.log the highest value.
+        // Math.round(7.25);
+
+
+
+        z = 7.25;
+        console.log(z);
+        let a = 7;
+        console.log(a);
+        if (a < z) {
+            hello=(7.25);
+        } else {
+            hello(7);
+        } 
+        console.log(hello)
+
+        // 7. More strings
+        // 7.1 Let's consider the following string: let myString = "this is a test".
+        // 7.2 Add the string to your file and console.log it.
+        // 7.3 Find a way to get the length of myString.
+        // 7.4 Console.log the length of myString.
+
+
+        let plurality = [] ;
+        console.log('the value of plurality will be:' +typeof(plurality));
+        console.log(plurality);
+
+        let arr = ["Lion"];
+
+        console.log(arr);
+
+        arr.push('baby pig');
+        console.log(arr);
+
+        // 7. More strings
+        // 7.1 Let's consider the following string: let myString = "this is a test".
+        // 7.2 Add the string to your file and console.log it.
+        // 7.3 Find a way to get the length of myString.
+        // 7.4 Console.log the length of myString.
+
+        let myString = "this is a test";
+        console.log(myString);
+        console.log(myString.length);
+
+        // 8. Write a program that checks the types of two variables and prints out SAME TYPE if they are the same type.
+        // 8.1 First declare at least four variables and assign them different data types.
+        // 8.2 For each variable write a console.log statement that logs the value
+
+
+
+        // 8.3 Now write a console.log statement wherein you first explain in words what you think the type of your variables is.
+        // 8.4 Now use typeof to log the actual type of your variables.
+        // 8.5 Now compare the types of your different variables with one another.
+        // 8.6 Make sure to also show a message when the variables you are comparing are not the same type.
+
+        let string1 = "hi";
+        console.log(string1);
+        let number1 = 11;
+        console.log(number1);
+
+        if (string1 === number1) {
+            console.log('SAME TYPE');
+        }else{
+        console.log('NOT SAME TYPE');
+        }
+        let Boolean = false;
+        console.log(Boolean);
+        let array1 = ["Hasanu"]; 
+        console.log(array1);
+        if (Boolean === array1) {
+            console.log('SAME TYPE');
+        }else{
+        console.log('NOT SAME TYPE');
+        }
+
+        // 9. If x equals 7, and the only other statement is x = x % 3, what would be the new value of x?
+        // 9.1 Add at least 3 console.log statements in which you show that you understand what % does.
+
+        let x1 = 7;
+        x1 %= 3;
+
+        console.log('the value of my variable x1 will \
+        be:' + 1);
+        console.log(x1);
+
+        let x2 = 8;
+        x2 %= 3;
+
+        console.log('the value of my variable x2 will \
+        be:' + 2);
+        console.log(x2);
+
+
+        let x3 = 9;
+        x3 %= 3;
+
+        console.log('the value of my variable x3 will \
+        be:' + 0);
+        console.log(x3);
+
+        let x4 = 10;
+        x4 %= 3;
+
+        console.log('the value of my variable x1 will \
+        be:' + 1);
+        console.log(x4);
+
+        // 10. Write a program to answer the following questions:
+        // 10.1 Can you store multiple types in an array? Numbers and strings? Make an example that illustrates your answer.
+        // 10.2 Can you compare infinities? (Not in Eyad's world) - does 6/0 === 10/0? How can you test this?
+
+        let array12 = ["Hasanu", 16, "false" ];
+        console.log(typeof(array12));
+
+
+
+        console.log( 6/0 === 10/0);
+        
+        
+        
+    </script>
+</body>
+</html>

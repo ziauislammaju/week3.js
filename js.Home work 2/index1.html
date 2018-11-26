@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <script>
+        let myString = "hello,this,is,a,difficult,to,read,sentence";
+         console.log(myString);
+         console.log(myString.length);
+        let newString = myString.replace(/,/g, " ");;
+        for (let index = 0; index < 7; index++) {
+        myString.replace(",", "/");
+        }  
+        console.log(newString);
+
+        let favoriteAnimals = ['blowfish', 'capricorn', 'giraffe'];
+        console.log(favoriteAnimals);
+        favoriteAnimals.push('turtle');
+        console.log(favoriteAnimals);
+        favoriteAnimals.shift();
+        favoriteAnimals.unshift('meerkat');
+        favoriteAnimals.unshift('blowfish');
+        console.log("Jim's favorite animal will come:after 'blowfish' and before 'capricorn'. " );
+        console.log(favoriteAnimals);
+        console.log('The array has a length of:'+favoriteAnimals.length)
+
+        favoriteAnimals.pop();
+        favoriteAnimals.pop();
+        favoriteAnimals.push('turtle');
+        console.log(favoriteAnimals);
+        console.log('The item you are looking for is at index: '+favoriteAnimals.indexOf('meerkat'));
+
+
+
+
+
+        // Create a function that takes 3 arguments and returns the sum of the these arguments.
+
+
+
+        function addThreeNumber(x,y,z){
+          var sum =x+y+z; 
+           return sum;
+        }
+        addThreeNumber(1,2,4);
+        // Create a function named colorCar that receives a color, and prints out, 'a red car' for example.
+
+        function colorCar(color){
+          console.log('a '+ color+' car' )
+        };
+        // Create an object and a function that takes the object as a parameter and prints out all of its properties and values.
+        let car = {type:"Fiat", model:"500", color:"white"};
+        function propertiesValues(Obj){
+          console.log(Obj)
+        }
+        propertiesValues(car);
+
+
+
+        // Create a function named vehicleType that receives a color, and a code, 1 for car, 2 for motorbike. And prints 'a blue motorbike' for example when called as vehicleType("blue", 2)
+
+
+        function vehicleType(color){
+          console.log("A "+ color+" car")
+          console.log('a '+ color + ' motorbike')
+        }
+        vehicleType("blue")
+
+
+        // Can you write the following without the if statement, but with just as a single line with console.log(...);?
+
+
+        if (3 === 3) {
+            console.log("yes")
+        } else {
+            console.log("no")
+        }
+
+
+
+        let singleLine = (3 === 3) ? "yes":"no"; 
+        console.log(singleLine);
+
+
+
+
+        // Create a function called vehicle, like before, but takes another parameter called age, so that vehicle("blue", 1, 5) prints 'a blue used car'
+
+        let myFun = ["blue", 1, 5]
+        function vehicle(color){
+          console.log("A "+color+ " used car")
+        };
+
+        vehicle(myFun[0])
+
+
+        // Make a list of vehicles, you can add "motorbike", "caravan", "bike", or more.
+
+
+        let vehicles = ["motorbike", "caravan", "bike"];
+
+        // How do you get the third element from that list?
+
+
+
+        console.log(vehicles[2]);
+
+
+
+        // Change the function vehicle to use the list of question 7. So that vehicle("green", 3, 1) prints "a green new bike".
+
+
+
+        myFun=["green", 3, 1];
+        function vehicle12(color, vehicle){
+          console.log("A "+color+ " new " + vehicle)
+        };
+        vehicle12(myFun[0], vehicles[2])
+
+
+
+        // Use the list of vehicles to write an advertisement. So that it prints something like: "Amazing Joe's Garage, we service cars, motorbikes, caravans and bikes.". (Hint: use a for loop.)
+        // obj1, obj2, obj3
+
+        // var cars = ["Amazing Joe's Garage,", "we service cars, ", "motorbikes, ", "caravans ", "and ", "bikes."];
+
+
+
+
+        function advertisement(arr){
+            var text = "";
+            for (let i = 0; i < arr.length; i++) {
+                text += arr[i] ;
+              if (i < arr.length-2){
+               text += ", ";
+             }
+             else if (i < arr.length-1){
+               text += " and "
+             }
+            }
+            console.log("Amazing Joe's Garage, we service cars, " + text);
+         };
+         advertisement(vehicles);
+
+        // What if you add one more vehicle to the list, can you have that added to the advertisement without changing the code for question 10?
+
+
+
+        vehicles.push("BMW");
+        function advertisement(arr){
+            var text = "";
+            for (let i = 0; i < arr.length; i++) {
+                text += arr[i] ;
+              if (i < arr.length-2){
+               text += ", ";
+             }
+             else if (i < arr.length-1){
+               text += " and "
+             }
+            }
+            console.log("Amazing Joe's Garage, we service cars, " + text);
+         };
+         advertisement(vehicles);
+
+
+
+
+
+        // Create an empty object.
+
+        // Create an object that contains the teachers that you have had so far for the different modules.
+
+        // Add a property to the object you just created that contains the languages that they have taught you.
+
+
+        let object12 = {} ;
+
+        let object123 = {
+          teachers: "[Cisco, Ahmed, Kosatas]",
+        
+          };
+        console.log(object123.teachers);
+        object123.languages="[Html, CSS, JS]";
+
+
+        // Write some code to test two arrays for equality using == and ===. Test the following:
+
+            let x = [1,2,3];
+            let y = [1,2,3];
+            let z = y;
+
+        // What do you think will happen with x == y, x === y and z == y and z == x? Prove it!
+
+
+        let x = [1,2,3];
+        let y = [1,2,3];
+        let z = y;
+
+        let Test1 = (x == y) ? " x == y :It's true":"x == y: It's not ture"; 
+        console.log(Test1);
+
+        let Test2 = (x === y) ? "x === y: It's true":"x === y: It's not ture"; 
+        console.log(Test2);
+
+
+        let Test3 = (z == y) ? "z == y: It's true":"z == y: It's not ture"; 
+        console.log(Test3);
+
+
+        let Test4 = (z == x) ? "z == x: It's true":"z == x: It's not ture"; 
+        console.log(Test4);
+
+
+
+
+        let o1 = { foo: 'bar' };
+        let o2 = { foo: 'bar' };
+        let o3 = o2;
+        let changes = (o1 = o3) ? "o1 = o3 :It's some value ": "o1 = o3 :It's not some value "; 
+        console.log(changes);
+
+        changes = (o2 = o3) ? "o2= o3 :It's some value ": "o2 = o3 :It's not some value "; 
+        console.log(changes);
+        o1 = { foo: 'sar' };
+        o2 = { foo: 'bar' };
+        o3 = o2;
+        changes = (o1 = o2) ? "o1 = o2 :If i change the value of o1 change and it's also 02 ": "o1 = o2 :If i change the value of o1 change and it's didn't change 02 "; 
+        console.log(changes);
+        changes = (o1 = o3) ? "o1 = o3 :If i change the value of o1 change and it's also 03 ": "o1 = o3 :If i change the value of o1 change and it's didn't change 03 "; 
+        console.log(changes);
+
+        o1 = { foo: 'bar' };
+        o2 = { foo: 'sar' };
+        o3 = o2;
+
+
+        changes = (o2 = o1) ? "o2 = o1:If i change the value of o2 change and it's also o1 ": "o2 = o1 :If i change the value of o2 change and it's didn't change 01 "; 
+        console.log(changes);
+
+        changes = (o2 = o3) ? "o2 = o3:If i change the value of o2 change and it's also o3 ": "o2 = o3 :If i change the value of o2 change and it's didn't change 03 "; 
+        console.log(changes);
+
+
+
+        //     What does the following code return? (And why?)
+
+            let bar = 42;
+            typeof typeof bar;
+
+        //     ‘Coerce' means to try to change - so coercing var x = '6' to number means trying to change the type to number temporarily.
+        let bar = 42;
+        function myfunction12(){
+
+        let why = typeof typeof bar;
+        return why ;
+        }
+        console.log(myfunction12())
+        // (typeof(typeof(bar)))==>type of bar is "number "(typeof ("number"))==>type of number is "string"
+    </script>
+</body>
+</html>
